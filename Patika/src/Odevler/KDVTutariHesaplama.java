@@ -14,6 +14,8 @@ public class KDVTutariHesaplama {
 		System.out.print("Miktar Giriniz = ");
 		double fiyat = degerAl.nextDouble();
 		
+		if(fiyat >= 1000) { kdv = 8; }
+		
 		double kdvFiyat = fiyat + (fiyat * (kdv / 100));
 		
 		double sonuc = kdvFiyat - fiyat;
