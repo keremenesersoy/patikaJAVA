@@ -19,7 +19,7 @@ public class HipotenusBulma {
 		System.out.print("c Degeri = ");
 		c = degerAl.nextInt();
 		
-		double pi = 3.14 , u = (a + b + c) / 2 , alan , cevre;
+		double u = (a + b + c) / 2 , alan , cevre;
 		
 		cevre = 2 * u;
 		alan = Math.sqrt(u * (u - a) * (u - b) * (u - c));
