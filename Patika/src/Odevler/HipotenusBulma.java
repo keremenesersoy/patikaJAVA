@@ -6,9 +6,8 @@ import java.lang.Math;
 public class HipotenusBulma {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		int a , b;
+		
+		int a , b , c;
 		Scanner degerAl = new Scanner(System.in);
 		
 		System.out.print("a Degeri = ");
@@ -17,9 +16,17 @@ public class HipotenusBulma {
 		System.out.print("b Degeri = ");
 		b = degerAl.nextInt();
 		
-		double hipotenus = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+		System.out.print("c Degeri = ");
+		c = degerAl.nextInt();
 		
-		System.out.println("Hipotenus Uzunlugu = " + hipotenus);
+		double pi = 3.14 , u = (a + b + c) / 2 , alan , cevre;
+		
+		cevre = 2 * u;
+		alan = Math.sqrt(u * (u - a) * (u - b) * (u - c));
+		
+		System.out.println("u = " + u);
+		System.out.println("Cevre = " + cevre);
+		System.out.println("Alan = " + alan);
 		
 
 	}
